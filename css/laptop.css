@@ -1,0 +1,325 @@
+/* COLOR 
+ #199cdb
+ #ced4da
+#e9ecef
+#f1f3f5*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "fontello", sans-serif;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  /* Banner */
+  #banner {
+    height: 60vh;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(46, 44, 44, 0.5),
+        rgba(46, 44, 44, 0.5)
+      ),
+      url(/images/banner.jpg);
+    background-size: cover;
+  }
+  #banner h1,
+  #banner span {
+    position: absolute;
+
+    color: rgba(247, 247, 247, 0.822);
+  }
+  #banner h1 {
+    font-size: 32px;
+    font-weight: 600;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #banner span {
+    font-weight: 400;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* navbar */
+  #nav-bar {
+    position: relative;
+  }
+  #nav-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #nav-bar a:link {
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 15px;
+    flex-basis: 120px;
+    font-size: 12px;
+    color: black;
+  }
+  #nav-bar p {
+    flex-basis: 300px;
+  }
+
+  .avatar {
+    position: absolute;
+    transform: scale(5);
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+  i {
+    color: #199cdb;
+  }
+
+  .container .bg-grey {
+    background: #f7f7f7;
+  }
+
+  section > .container {
+    width: 1170px;
+    margin: auto;
+    /* display: block; */
+
+    padding: 30px 50px;
+  }
+
+  /* INFO */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #about h1 {
+    font-size: 24px;
+    font-weight: 550;
+  }
+  .container-about1 {
+    background-color: #f1f3f5;
+  }
+  .container-about2 {
+    background-color: #e9ecef;
+  }
+  #target,
+  #personal-info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #target {
+    margin-right: 35px;
+    margin-left: 40%;
+  }
+  .section-title {
+    padding-bottom: 50px;
+    font-size: 32px;
+  }
+  #target p {
+    line-height: 1.5;
+  }
+  #personal-info li {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+  #personal-info li:last-child {
+    padding-top: 20px;
+  }
+  #personal-info span {
+    font-weight: 550;
+  }
+  /* job-info */
+  #job-info .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr auto;
+
+    gap: 20px;
+    justify-content: center;
+  }
+  #job-info .container .job-inf {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 15% 1fr;
+    padding: 20px 20px;
+    border: 1px solid #ced4da;
+    line-height: 1.5;
+  }
+  #job-info .container .job-inf h1 {
+    padding-bottom: 32px;
+    font-size: 24px;
+  }
+  #job-info .container .job-inf i {
+    font-size: 32px;
+    color: #ced4da;
+  }
+  #job-info .container .job-inf ul,
+  .interests {
+    grid-column: 1/-1;
+  }
+  #job-info .container .job-inf li {
+    padding-bottom: 32px;
+    color: #000;
+    list-style-type: none;
+  }
+  #job-info .container .job-inf li::before {
+    content: "\2022"; /*"\2022" là dấu chấm trong Unicode number 
+  (https://www.w3.org/Style/Examples/007/color-bullets.en.html) */
+    color: #199cdb;
+    font-size: 25px;
+    float: left;
+    margin: 0 0 0 -1em;
+    width: 1em;
+  }
+  /* So thich */
+  .interests {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px;
+    gap: 10px;
+  }
+  #job-info .interests .icon i {
+    font-size: 15px;
+    color: #199cdb;
+    border: 1px solid #199cdb;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  .interests .icon {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  #job-info .interests .icon p {
+    text-align: center;
+  }
+  /* Ky nang/Ngon ngu */
+  .skill {
+    display: block;
+  }
+  .check {
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background: #199cdb;
+    margin-right: 10px;
+    margin-bottom: 25px;
+  }
+  .nocheck {
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background: #ced4da;
+    margin-right: 10px;
+    margin-bottom: 25px;
+  }
+  /* Chứng chỉ giải thưởng */
+  #certificate {
+    line-height: 2;
+    background-color: #f1f3f5;
+  }
+  #certificate .container {
+    padding-left: 120px;
+  }
+  #certificate h1 {
+    font-size: 24px;
+  }
+  .cer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .cer-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d6c08d;
+  }
+  /* Áp dụng timeline assm1 */
+  .cer-details:nth-child(2) {
+    position: relative;
+  }
+  .cer-details:nth-child(2)::before {
+    content: "";
+    background-color: #d6c08d;
+    position: absolute;
+    bottom: 20px;
+    top: 0;
+    left: -20px;
+    width: 1px;
+  }
+  .cer-details:last-child {
+    padding-top: 20px;
+    border-bottom: 0px;
+  }
+  #certificate img {
+    width: 200px;
+    height: 100px;
+  }
+  .cer-name p:first-child {
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  /* Dự án */
+  #project {
+    margin-left: 120px;
+  }
+  #project h1 {
+    font-size: 24px;
+  }
+  .proj {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+  }
+  #project img {
+    width: 100%;
+    height: auto;
+  }
+  .proj-name {
+    text-transform: uppercase;
+  }
+  .proj-time,
+  .proj-name,
+  table {
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-collapse: collapse;
+  }
+  .proj-time span {
+    padding-right: 15px;
+  }
+  .proj-time i {
+    color: #495057;
+  }
+  #project table {
+    width: 100%;
+  }
+  #project tr {
+    border: 1px solid #e9ecef;
+    border-collapse: collapse;
+  }
+  #project td {
+    padding-bottom: 15px;
+  }
+  /* footer */
+  #footer .container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  #footer i {
+    background-color: #199cdb;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+    color: #fff;
+  }
+  #footer span {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+}

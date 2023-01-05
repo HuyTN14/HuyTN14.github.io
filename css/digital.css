@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "fontello", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .digital-cv {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    border: 5px solid blue;
+  }
+}
+
+h1 {
+  border-bottom: 1px solid #a19f9f;
+  padding-bottom: 5px;
+  color: #2f2fff;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.container {
+  padding: 30px 20px;
+  border: 10px solid blue;
+  border-collapse: collapse;
+  /* goals */
+}
+.goals {
+  grid-column: 1/3;
+}
+.goal-detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  border-bottom: 1px solid #a19f9f;
+  padding-top: 20px;
+}
+.features-icon {
+  width: 32px;
+  height: 32px;
+}
+/* team */
+.team-detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  padding-top: 20px;
+}
+.team-text {
+  padding-left: 20px;
+}
+
+/* timeline */
+.timeline {
+  grid-column: 4/5;
+  grid-row: -3/-1;
+}
+.timeline-detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+
+  padding-top: 20px;
+}
+.timeline-text {
+  border-bottom: 1px dashed #277883;
+  margin-left: 30px;
+}
+span {
+  border: 1px solid #a19f9f;
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+}
+/* scopes */
+.scopes {
+  grid-column: 1/3;
+}
+.scopes-detail {
+  display: flex;
+}
+.scope-left,
+.scope-right {
+  padding-right: 50px;
+}
+.scope-left h2,
+.scope-right h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+/* primary */
+.primary-detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+
+  padding-top: 20px;
+}
+.primary-text {
+  padding-left: 20px;
+}
+@media (max-width: 600px) {
+  .digital-cv {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .digital-cv {
+    grid-template-columns: 1fr;
+  }
+}
